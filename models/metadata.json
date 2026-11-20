@@ -1,0 +1,106 @@
+{
+  "features": [
+    "age",
+    "attendance_pct",
+    "study_hours_per_week",
+    "previous_score",
+    "assignment_completion_pct",
+    "internal_assessment_score",
+    "participation_score",
+    "sleep_hours_per_day",
+    "extracurricular_hours_per_week",
+    "failed_subjects"
+  ],
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "epochs_trained": 32,
+  "ann": {
+    "accuracy": 0.7066666666666667,
+    "precision_macro": 0.7085601016535471,
+    "recall_macro": 0.7079351445666426,
+    "f1_macro": 0.7080357167161697,
+    "per_class": {
+      "Low": {
+        "precision": 0.7577720207253886,
+        "recall": 0.7873485868102288,
+        "f1": 0.7722772277227723,
+        "support": 743
+      },
+      "Medium": {
+        "precision": 0.5788787483702738,
+        "recall": 0.5803921568627451,
+        "f1": 0.5796344647519582,
+        "support": 765
+      },
+      "High": {
+        "precision": 0.7890295358649789,
+        "recall": 0.7560646900269542,
+        "f1": 0.7721954576737784,
+        "support": 742
+      }
+    },
+    "confusion_matrix": [
+      [
+        585,
+        149,
+        9
+      ],
+      [
+        180,
+        444,
+        141
+      ],
+      [
+        7,
+        174,
+        561
+      ]
+    ]
+  },
+  "baseline": {
+    "accuracy": 0.7066666666666667,
+    "precision_macro": 0.7075559930970394,
+    "recall_macro": 0.7080266665977474,
+    "f1_macro": 0.7074747634784219,
+    "per_class": {
+      "Low": {
+        "precision": 0.7515923566878981,
+        "recall": 0.7940780619111709,
+        "f1": 0.7722513089005235,
+        "support": 743
+      },
+      "Medium": {
+        "precision": 0.5803452855245684,
+        "recall": 0.5712418300653594,
+        "f1": 0.5757575757575758,
+        "support": 765
+      },
+      "High": {
+        "precision": 0.7907303370786517,
+        "recall": 0.7587601078167115,
+        "f1": 0.7744154057771664,
+        "support": 742
+      }
+    },
+    "confusion_matrix": [
+      [
+        590,
+        145,
+        8
+      ],
+      [
+        187,
+        437,
+        141
+      ],
+      [
+        8,
+        171,
+        563
+      ]
+    ]
+  }
+}
